@@ -1,0 +1,39 @@
+.korus_content table {
+    margin-top: 15px;
+}
+
+.korus_content td {
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding-left: 0;
+    padding: 10px;
+
+    vertical-align: top;
+}
+
+.korus_content caption {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+.korus_content td:first-child {
+    border-left: 1px solid #ccc;
+}
+
+.korus_content .department {
+    background-color: Silver;
+}
+
+.korus_content select[name=like] {
+    margin-right: 20px;
+}
+
+.korus_content select[name=department] {
+    margin-left: 20px;
+}
+
+.korus_content select[name=users] {
+    margin-left: 20px;
+    margin-right: 20px;
+}
