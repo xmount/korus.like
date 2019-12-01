@@ -25,7 +25,7 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) {
             <?php foreach ($arResult["DEPARTMENT_ALL"] as $id => $item) { ?>
                 <?php if (!$item["PARENT"]) { ?>
                     <option class="department"
-                            value="<?= $id ?>" <?= ($arResult["values"]["department"] == $id) ? "selected" : "" ?>><?= $item["NAME"] ?></option>
+                            value="<?= $id ?>" <?= ($arResult["values"]["department"] == $id) ? "selected" : "" ?>><?= strtoupper($item["NAME"]) ?></option>
                 <? } else { ?>
                     <option value="<?= $id ?>" <?= ($arResult["values"]["department"] == $id) ? "selected" : "" ?>>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?= $item["NAME"] ?></option>
